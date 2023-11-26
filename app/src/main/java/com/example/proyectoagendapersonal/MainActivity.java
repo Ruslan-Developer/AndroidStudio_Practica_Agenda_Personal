@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = preferencias.edit();
         String nombre = et1.getText().toString();
         String datos = et2.getText().toString();
-        editor.putString(nombre, datos);
+        editor.putString(nombre, datos); //Guarda los datos en la agenda con el nombre como clave y los datos como valor
 
         editor.commit();
         Toast.makeText(this,"Datos grabados en agenda", Toast.LENGTH_LONG).show();
